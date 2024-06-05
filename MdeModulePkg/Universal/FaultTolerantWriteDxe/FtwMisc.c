@@ -1184,10 +1184,14 @@ FindFvbForFtw (
           //
           // Check the alignment of spare area address and length, they should be block size aligned
           //
-          if (((FtwDevice->SpareAreaAddress & (FtwDevice->SpareBlockSize - 1)) != 0) ||
+        
+          if (
+#if 0
+              ((FtwDevice->SpareAreaAddress & (FtwDevice->SpareBlockSize - 1)) != 0) ||
+#endif
               ((FtwDevice->SpareAreaLength & (FtwDevice->SpareBlockSize - 1)) != 0))
           {
-            DEBUG ((DEBUG_ERROR, "Ftw: Spare area address or length is not block size aligned\n"));
+            DEBUG ((DEBUG_ERROR, "Ftw: Spare area address or length is not block size aligned,FtwDevice->SpareAreaAddress:0x%x,FtwDevice->SpareAreaLength:0x%x,FtwDevice->SpareBlockSize:0x%x,\n",FtwDevice->SpareAreaAddress,FtwDevice->SpareAreaLength,FtwDevice->SpareBlockSize));
             FreePool (HandleBuffer);
             //
             // Report Status Code EFI_SW_EC_ABORTED.

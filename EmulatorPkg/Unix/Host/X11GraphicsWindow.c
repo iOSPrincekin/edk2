@@ -1060,7 +1060,7 @@ X11GraphicsWindowOpen (
 
   Drv->display = XOpenDisplay (display_name);
   if (Drv->display == NULL) {
-    fprintf (stderr, "uga: cannot connect to X server %s\n", XDisplayName (display_name));
+    fprintf (stderr, "uga: cannot connect to X server %s,display_name:%s\n", XDisplayName (display_name),display_name);
     free (Drv);
     return EFI_DEVICE_ERROR;
   }
