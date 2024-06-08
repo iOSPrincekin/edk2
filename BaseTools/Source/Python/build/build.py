@@ -70,6 +70,11 @@ gSupportedTarget = ['all', 'genc', 'genmake', 'modules', 'libraries', 'fds', 'cl
 TemporaryTablePattern = re.compile(r'^_\d+_\d+_[a-fA-F0-9]+$')
 TmpTableDict = {}
 
+os.environ["WORKSPACE"]="/Users/lee/Desktop/Computer_Systems/UEFI/edk2"
+os.environ["PACKAGES_PATH"]="/Users/lee/Desktop/Computer_Systems/UEFI/edk2/edk2-libc"
+os.environ["CONFIG_PATH"]="/Users/lee/Desktop/Computer_Systems/UEFI/edk2/Conf"
+os.environ["EDK_TOOLS_PATH"]="/Users/lee/Desktop/Computer_Systems/UEFI/edk2/BaseTools"
+
 ## Check environment PATH variable to make sure the specified tool is found
 #
 #   If the tool is found in the PATH, then True is returned

@@ -26,12 +26,12 @@ echo lh1992524 | sudo -S mkdir hda-contents
 echo lh1992524 | sudo -S cp ${EmulatorX64_DEBUG_XCODE5_X64_DIR}/HelloWorld.* ./hda-contents
 
 QEMU=qemu-system-x86_64
-QEMU_OPTION=" -s -pflash OVMF.fd -hda fat:rw:hda-contents/ -net none "
+QEMU_OPTION=" -s -pflash OVMF.fd -hda fat:rw:hda-contents/ -net none -debugcon file:debug.log -global isa-debugcon.iobase=0x402 "
 SUDO_QEMU="echo lh1992524 | sudo -S ${QEMU}"
 
 if  ( [[ $OP == "debug" ]] );then
     osascript -e "tell application \"Terminal\" to quit"
-    osascript -e "tell application \"Terminal\" to do script \"cd ${hda_contents_dir}\\n lldb HelloWorld.efi \\n gdb-remote localhost:1234\"" \
+    osascript -e "tell application \"Terminal\" to do script \"cd ${hda_contents_dir}\\n lldb \\n gdb-remote localhost:1234\"" \
     -e "tell application \"Terminal\" to activate" \
     -e "tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down" \
     -e "tell application \"Terminal\" to set background color of window 1 to {0,0,0,1}" \

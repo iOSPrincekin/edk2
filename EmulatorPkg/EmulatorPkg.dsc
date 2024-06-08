@@ -50,6 +50,24 @@
   #
   # Entry point
   #
+  MyLibraryLib|MdeModulePkg/Application/MyLibrary/MyLibrary.inf
+  LibContainer|StdLib/LibC/Containers/ContainerLib.inf
+  LibIIO|StdLib/LibC/Uefi/InteractiveIO/IIO.inf
+  DevConsole|StdLib/LibC/Uefi/Devices/daConsole.inf
+  LibSignal|StdLib/LibC/Signal/Signal.inf
+  DevUtility|StdLib/LibC/Uefi/Devices/daUtility.inf
+  LibGen|StdLib/PosixLib/Gen/LibGen.inf
+  LibWchar|StdLib/LibC/Wchar/Wchar.inf
+  LibUefi|StdLib/LibC/Uefi/Uefi.inf
+  LibTime|StdLib/LibC/Time/Time.inf
+  LibString|StdLib/LibC/String/String.inf
+  LibStdLib|StdLib/LibC/StdLib/StdLib.inf
+  LibLocale|StdLib/LibC/Locale/Locale.inf
+  LibGdtoa|StdLib/LibC/gdtoa/gdtoa.inf
+  LibCType|StdLib/LibC/Ctype/Ctype.inf
+  LibStdio|StdLib/LibC/Stdio/Stdio.inf
+  LibC|StdLib/LibC/LibC.inf
+  ShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
   PeiCoreEntryPoint|MdePkg/Library/PeiCoreEntryPoint/PeiCoreEntryPoint.inf
   PeimEntryPoint|MdePkg/Library/PeimEntryPoint/PeimEntryPoint.inf
   DxeCoreEntryPoint|MdePkg/Library/DxeCoreEntryPoint/DxeCoreEntryPoint.inf
@@ -462,6 +480,12 @@
   EmulatorPkg/EmuSnpDxe/EmuSnpDxe.inf
 
   MdeModulePkg/Application/HelloWorld/HelloWorld.inf
+  MdeModulePkg/Application/Uefi_Main/Uefi_Main.inf
+  MdeModulePkg/Application/ShellApp_Main/ShellApp_Main.inf
+  MdeModulePkg/Application/Stdlib_Main/Stdlib_Main.inf
+  MdeModulePkg/Application/MyLibApp/MyLibApp.inf
+
+
 
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
