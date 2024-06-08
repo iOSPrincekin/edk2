@@ -259,6 +259,7 @@ EFI_STATUS LocateFileRoot(void)
         return Status;
     }
     Status = gSimpleFileSystem->OpenVolume(gSimpleFileSystem, &gFileRoot);
+    return Status;
 }
 
 //Name: LocateHiiFont

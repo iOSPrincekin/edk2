@@ -7,7 +7,7 @@
 #include "Graphic.h"
 #include "Pictures.h"
 #include "FileRW.h"
-#include "KeyBoard.h"
+#include "Keyboard.h"
 
 
 extern EFI_GRAPHICS_OUTPUT_PROTOCOL       *gGraphicsOutput;

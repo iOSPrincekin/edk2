@@ -4,7 +4,7 @@
  * CSDN: https://blog.csdn.net/luobing4365
  * 知乎: https://www.zhihu.com/column/c_1233025362843209728
  * **/
-#include "common.h"
+#include "Common.h"
 #include "Keyboard.h"
 #include "SerialPort.h"
 

@@ -33,7 +33,7 @@
 #include <Protocol/SimpleFileSystem.h> //文件系统访问
 #include <IndustryStandard/Bmp.h> //for bmp
 #include <Library/MemoryAllocationLib.h> //AllocatePool function...
-#include <guid/FileInfo.h> //FileInfo
+#include <Guid/FileInfo.h> //FileInfo
 #include <Library/FileHandleLib.h>  //文件信息处理
 #include <Protocol/HiiFont.h>
 #include <Protocol/HiiImage.h>

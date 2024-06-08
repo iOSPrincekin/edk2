@@ -29,7 +29,7 @@
 #include <Protocol/PciRootBridgeIo.h>	//获取PciRootBridgeIO protocol所需
 #include <IndustryStandard/Pci.h>  //pci访问所需的头文件，包含pci22.h,pci23.h...
 
-#include <guid/FileInfo.h> //FileInfo
+#include <Guid/FileInfo.h> //FileInfo
 #include <Library/FileHandleLib.h>  //各种文件信息处理
 
 #include <Protocol/SimpleFileSystem.h> // 

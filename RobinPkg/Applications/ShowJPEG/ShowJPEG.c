@@ -20,9 +20,9 @@
  * **/
 
 
-#include "common.h"
+#include "Common.h"
 #include "FileRW.h"
-#include "KeyBoard.h"
+#include "Keyboard.h"
 #include "Graphic.h"
 #include "Window.h"
 #include "PciRW.h"

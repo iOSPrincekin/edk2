@@ -37,7 +37,7 @@
 #include <stdio.h>
 
 #include "Common.h"
-#include "KeyBoard.h"
+#include "Keyboard.h"
 #include "Network.h"
 
 #define MAXBUF 1024

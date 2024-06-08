@@ -38,7 +38,7 @@
 #include <stdio.h>
 
 #include "Common.h"
-#include "KeyBoard.h"
+#include "Keyboard.h"
 #include "Network.h"
 
 EFI_STATUS tcp6Client(IN int Argc,
